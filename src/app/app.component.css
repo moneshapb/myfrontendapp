@@ -1,0 +1,27 @@
+.navbar-back{
+background-color: slategray;
+
+}
+
+.navbar-brand{
+
+  color: rgb(15, 188, 227);
+}
+.nav-link, .nav-item{
+  color: rgb(15, 194, 235);
+}
+.nav-link :active{
+  color: rgb(14, 174, 210);
+}
+
+.btn{
+  color: rgb(15, 188, 227);
+  background-color: whitesmoke;
+}
+
+.search{
+  background-color: rgb(14, 174, 210);
+  color: whitesmoke;
+}
+
+
