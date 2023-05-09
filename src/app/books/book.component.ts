@@ -1,7 +1,7 @@
 import { Component, OnInit} from "@angular/core";
 import { HttpClientModule } from "@angular/common/http";
 import { BookService } from './Bookservice.service';
-import { Book } from './book'
+/*import { Book } from './book';*/
 
 
 @Component({
@@ -18,7 +18,7 @@ export class BookComponent implements OnInit {
 
   pageTitle = 'My Books ';
 
-  book: Book = {
+  book = {
     title: '',
     authors: [''],
     coverImage: '',

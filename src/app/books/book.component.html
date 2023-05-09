@@ -37,7 +37,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let item of book">
+      <tr ng-repeat="book in books">
         <td>{{ book.title }}</td>
         <td><a href="{{ book.url }}">{{ book.url }}</a></td>
         <td>{{ book.description }}</td>
