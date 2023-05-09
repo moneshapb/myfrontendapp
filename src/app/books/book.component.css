@@ -5,10 +5,31 @@ body{
 }
 
 
-li{
+th{
 
-color: blueviolet;
+color: whitesmoke;
 
-background-color: blue;
+}
+
+td{
+
+
+}
+
+
+
+.btn{
+  color: rgb(15, 188, 227);
+  background-color: whitesmoke;
+
+}
+
+
+input{
+  background-color: rgb(14, 174, 210);
+  height: 40px;
+  width: 400px;
+  font-size: 30px;
+  color: whitesmoke;
 
 }
