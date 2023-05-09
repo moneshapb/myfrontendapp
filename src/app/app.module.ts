@@ -6,22 +6,24 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+import { BookComponent } from './books/book.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    BookComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     RouterModule.forRoot([
-      { path: 'welcome', component: HomeComponent },
-      { path: 'search', component: AppComponent},
-      { path: '', redirectTo: 'welcome', pathMatch: 'full' },
-      { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
+      { path: 'home', component: HomeComponent },
+      { path: 'book', component: BookComponent},
+      { path: '', redirectTo: 'home', pathMatch: 'full' },
+      { path: '**', redirectTo: 'home', pathMatch: 'full' }
     ]), ],
 
   providers: [],

@@ -1,0 +1,27 @@
+h4{
+
+
+  color: whitesmoke;
+  border: solid hwb(197 53% 8%) 5px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.img1{
+
+width: 40%;
+height: 60%;
+
+
+}
+
+
+h1{
+font-size: 70px;
+font-family: fantasy;
+color: skyblue;
+font-style: italic;
+float: left;
+border: whitesmoke solid 10px ;
+
+}
