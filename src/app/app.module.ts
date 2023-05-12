@@ -7,7 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { BookComponent } from './books/book.component';
-
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -22,8 +23,10 @@ import { BookComponent } from './books/book.component';
     RouterModule.forRoot([
       { path: 'home', component: HomeComponent },
       { path: 'book', component: BookComponent},
-      { path: '', redirectTo: 'home', pathMatch: 'full' },
-      { path: '**', redirectTo: 'home', pathMatch: 'full' }
+      { path: 'signup', component: SignupComponent},
+      { path: 'login', component: LoginComponent},
+      { path: '', redirectTo: 'login', pathMatch: 'full' },
+      { path: '**', redirectTo: 'login', pathMatch: 'full' }
     ]), ],
 
   providers: [],

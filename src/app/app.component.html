@@ -2,19 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport">
+    <a  href="https://icons8.com/icon/iMHnp8GsNdva/add">add</a> icon by <a href="https://icons8.com">Icons8</a>
 
   </head>
   <body>
 <nav class='navbar'>
-  <a class='navbar-brand'>{{pageTitle}}</a>
+  <a class='navbar-brand'>{{pageTitle}} </a>
   <ul class='nav nav-pills'>
-    <li><a class='nav-link' routerLinkActive='active' routerLink='/home'>Home</a></li>
-    <li><a class='nav-link' routerLinkActive='active' routerLink='/book'> Books</a></li>
+  <li><a class='nav-link' routerLinkActive='active' routerLink='/signup'><img src="./assets/sign.png"> Signup</a></li>
+  </ul>
+
+  <ul class='nav nav-pills'>
+    <li><a class='nav-link' routerLinkActive='active' routerLink='/home'><img src="./assets/home.png">Home</a></li>
+    <li><a class='nav-link' routerLinkActive='active' routerLink='/book'><img src="./assets/books.png"> Books</a></li>
+    <li><a class='nav-link' routerLinkActive='active' routerLink='/login'><img src="./assets/login.png"> Login</a></li>
+
   </ul>
   <form class="d-flex" role="search">
+    <img src="./assets/search.png">
     <input class="search form-control me-2" type="search" placeholder="Search" aria-label="Search">
     <button class="btn" type="submit">Search</button>
+
   </form>
 </nav>
 <div class='container'>

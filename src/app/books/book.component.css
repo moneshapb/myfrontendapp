@@ -1,7 +1,8 @@
-body{
-  background-color: #b0b0b0;
-  width: 100%;
-  height: 100%;
+.main-div{
+  display: block;
+  background-color:  hwb(0 0% 100%);
+  height : 100vh;
+
 }
 
 
@@ -19,14 +20,14 @@ td{
 
 
 .btn{
-  color: rgb(15, 188, 227);
-  background-color: whitesmoke;
+  color: white;
+  background-color: rgb(190, 179, 23);
 
 }
 
 
 input{
-  background-color: rgb(14, 174, 210);
+  background-color: rgb(190, 179, 23);
   height: 40px;
   width: 400px;
   font-size: 30px;

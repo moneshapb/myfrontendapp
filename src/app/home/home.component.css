@@ -1,8 +1,15 @@
+.main-div{
+  display: block;
+  background-color: #000000;
+
+}
+
+
 h4{
 
 
-  color: whitesmoke;
-  border: solid hwb(197 53% 8%) 5px;
+  color: rgb(190, 179, 23);
+  border: solid hwb(0 100% 0%) 5px;
   text-align: center;
   font-size: 25px;
 }
@@ -19,9 +26,9 @@ height: 60%;
 h1{
 font-size: 70px;
 font-family: fantasy;
-color: skyblue;
+color: white;
 font-style: italic;
 float: left;
-border: whitesmoke solid 10px ;
+border: rgb(190, 179, 23) solid 10px ;
 
 }
