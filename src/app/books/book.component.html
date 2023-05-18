@@ -4,13 +4,13 @@
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://openlibrary.org/api/books?bibkeys=ISBN:0451526538&callback=mycallback"></script>
+  <script src="https://books.google.com/books?hl=en&as_coll=0&num=10&uid=11122233344455566778&source=gbs_slider_cls_metadata_0_mylibrary"></script>
 
   <script>
     var app = angular.module("myfrontendapp", []);
     app.controller("myCtrl", function($scope, $http) {
       $scope.search = function() {
-        $http.get("https://openlibrary.org/works/OL45804W.json" + $scope.query)
+        $http.get("https://www.googleapis.com/books/v1/volumes?q=time&printType=books&key=AIzaSyCGC083f5m4-6LC5at4Nyb9UXsMxbMYyr8" + $scope.query)
           .then(function(response) {
               $scope.books = response.data;
             },
