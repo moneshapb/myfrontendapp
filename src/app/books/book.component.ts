@@ -15,31 +15,23 @@ import { BookService } from './Bookservice.service';
 
 
 export class BookComponent implements OnInit {
+   books;
 
-  pageTitle = 'My Books ';
+  constructor(private BookService: BookService) { }
 
-  book = {
-    title: '',
-    authors: [''],
-    coverImage: '',
-    description: '',
-    url: '',
-  };
+  OnSearch(s){
+    this.BookService.SearchBooks(s)
+        .subscribe((data) => {
+            this.books = data.items;
+        });
+  }
 
-
-
-
-
-
-
-
-
-
-constructor(private bookService: BookService) {}
-ngOnInit() {
-  this.bookService.getBooks().subscribe((response: any) => {
-     this.book = response.books;
-  });
-}
+  ngOnInit() {
+     this.BookService.SearchBooks('javascript')
+          .subscribe((data)=>{
+             //console.log(data.items)
+          })
+  }
 
 }
+

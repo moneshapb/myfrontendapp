@@ -1,54 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<head>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://books.google.com/books?hl=en&as_coll=0&num=10&uid=11122233344455566778&source=gbs_slider_cls_metadata_0_mylibrary"></script>
+    <title>Book Finder</title>
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div id="title" class="center">
+        <h1 id="header" class="text-center mt-5">Book Finder</h1>
+        <div class="row">
+          <div id="input" class="input-group mx-auto col-lg-6 col-md-8 col-sm-12">
+            <input id="search-box" type="text" class="form-control" placeholder="Search Books!...">
+            <button id="search" class="btn btn-primary" onclick="">Search</button>
+        </div>
+        </div>
+      </div>
+      <div class="book-list" >
+        <h2 class="text-center">Search Result</h2>
+        <div id="list-output" class="">
+          <div class="row">
+            <!-- card  -->
+              </div>
+      </div>
+      </div>
+    </div>
 
-  <script>
-    var app = angular.module("myfrontendapp", []);
-    app.controller("myCtrl", function($scope, $http) {
-      $scope.search = function() {
-        $http.get("https://www.googleapis.com/books/v1/volumes?q=time&printType=books&key=AIzaSyCGC083f5m4-6LC5at4Nyb9UXsMxbMYyr8" + $scope.query)
-          .then(function(response) {
-              $scope.books = response.data;
-            },
-            function(response) {
-              console.log("Error: " + response.statusText);
-            });
-      };
-    });
-  </script>
-</head>
-
-<body ng-app="myfrontendapp" ng-controller="myCtrl">
-  <div class="main-div">
-<br/>
-
-  <input type="text" ng-model="query" /> <br/>
-  <button class="btn" ng-click="search()">Search</button>
-
-  <table>
-    <thead>
-      <tr>
-        <th>Title</th>
-        <th>URL</th>
-        <th>Description</th>
-        <th>Author</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr ng-repeat="book in books">
-        <td>{{ book.title }}</td>
-        <td><a href="{{ book.url }}">{{ book.url }}</a></td>
-        <td>{{ book.description }}</td>
-        <td>{{ book.authors }}</td>
-      </tr>
-    </tbody>
-  </table>
-  </div>
-</body>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <link rel="stylesheet" href="book.component.css">
+    <script src="js/index.js"></script>
+  </body>
 
 
 </html>

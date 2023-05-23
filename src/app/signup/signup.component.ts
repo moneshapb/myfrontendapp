@@ -24,7 +24,7 @@ phoneNumber : ['']
   }
 
   signUp(){
-    this.http.post<any>("http://localhost:3000/signupUsersList",this.signUpForm.value)
+    this.http.post<any>("http://localhost:3000/signup",this.signUpForm.value)
     .subscribe(res=>{
       alert('SIGNIN SUCCESFUL');
       this.signUpForm.reset()

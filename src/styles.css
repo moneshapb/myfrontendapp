@@ -2,7 +2,9 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~font-awesome/css/font-awesome.min.css";
 
-
+nav{
+  color: rgb(190, 179, 23);
+}
 div.card-header {
   font-size: large;
  }
@@ -23,5 +25,5 @@ div.card-header {
    text-decoration: underline;
  }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: black;}
+html, body{ height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: black; color: rgb(190, 179, 23);}
